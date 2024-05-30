@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bugatti La Voiture Noire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="BUGATTI_La_Voiture_Noire.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="content">
+        <header>
+            <div class="logo"><img src="Bugatti_logo.png" alt="Bugatti Logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Introducing La Voiture Noire</h1>
+                <p>A Masterpiece of Automotive Art</p>
+                <a href="#discover" class="cta-button">Discover More</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About La Voiture Noire</h2>
+            <p>La Voiture Noire is an extraordinary one-off hypercar that combines elegance and power in a seamless blend. Created to honor Bugatti’s 110th anniversary, this car is a modern interpretation of the classic Type 57 SC Atlantic.</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Unparalleled Features</h2>
+            <ul>
+                <li><img src="icon1.png" alt="Feature Icon"> 8.0-liter W16 Engine</li>
+                <li><img src="icon2.png" alt="Feature Icon"> 1500 Horsepower</li>
+                <li><img src="icon3.png" alt="Feature Icon"> Carbon Fiber Body</li>
+                <li><img src="icon4.png" alt="Feature Icon"> Handcrafted Interior</li>
+            </ul>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container-wrapper">
+                <button class="scroll-button left" onclick="scrollGallery('left')">&#10094;</button>
+                <div class="gallery-container">
+                    <div class="gallery-item"><img src="frontView.jpeg" alt="Bugatti La Voiture Noire Front View"></div>
+                    <div class="gallery-item"><img src="SideView.jpeg" alt="Bugatti La Voiture Noire Side View"></div>
+                    <div class="gallery-item"><img src="BackView.jpeg" alt="Bugatti La Voiture Noire Rear View"></div>
+                    <div class="gallery-item"><img src="TopView.jpeg" alt="Bugatti La Voiture Noire Top View"></div>
+                    <div class="gallery-item"><img src="BackView1.jpeg" alt="Bugatti La Voiture Noire Rear View"></div>
+                </div>
+                <button class="scroll-button right" onclick="scrollGallery('right')">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials">
+            <h2>What Enthusiasts Say</h2>
+            <blockquote>
+                "La Voiture Noire is a testament to Bugatti's commitment to excellence. An unparalleled driving experience."
+                <cite>- Car Enthusiast Magazine</cite>
+            </blockquote>
+            <blockquote>
+                "The epitome of luxury and performance. Truly a work of art."
+                <cite>- Auto World</cite>
+            </blockquote>
+        </section>
+
+        <section id="cta">
+            <h2>Experience the Legend</h2>
+            <a href="#reserve" class="cta-button">Reserve Your La Voiture Noire Today</a>
+        </section>
+
+        <footer>
+            <div class="contact-info" id="contact">
+                <p>Email: info@bugatti.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 1234 Bugatti Drive, Molsheim, France</p>
+            </div>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="additional-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+    
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        function scrollGallery(direction) {
+            const container = document.querySelector('.gallery-container');
+            const scrollAmount = 300; // Adjust this value to control the scroll distance
+
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else if (direction === 'right') {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    </script>    
+</body>
+</html>

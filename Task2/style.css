@@ -1,0 +1,233 @@
+body {
+    font-family: 'Courier New', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar{
+    display:none;
+}
+
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 7px 0;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 100px;    
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.cta-button {
+    background: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+#about, #features, #gallery, #testimonials, #cta, footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 20px;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+}
+
+#features ul li {
+    display: inline-block;
+    width: 45%;
+    margin: 10px 2.5%;
+    text-align: left;
+}
+
+#features ul li img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+    filter: grayscale(10);
+}
+
+blockquote {
+    font-size: 18px;
+    color: #ccc;
+    margin: 20px;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer .contact-info p {
+    display: block;
+    margin: 10px 0;
+}
+
+footer .additional-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ff0000; 
+}
+
+/* Gallery Section */
+#gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-container-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto;
+}
+
+.gallery-item {
+    flex: none;
+    scroll-snap-align: start;
+    width: 90%; /* Increase the width for larger images */
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hide scrollbar for gallery container */
+.gallery-container::-webkit-scrollbar {
+    width: 0; /* Safari and Chrome */
+}
+
+.gallery-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Scroll Button Styles */
+.scroll-button {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.scroll-button.left {
+    left: 10px;
+}
+
+.scroll-button.right {
+    right: 10px;
+}
+
+.scroll-button:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
