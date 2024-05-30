@@ -62,8 +62,8 @@ header nav ul li a {
     font-weight: bold;
 }
 header nav ul li a:hover {
-    color: #ff0000; /* Change the color to red on hover */
-    text-decoration: none; /* Add an underline on hover */
+    color: #ff0000;
+    text-decoration: none; 
 }
 
 
@@ -185,15 +185,15 @@ footer .social-media a:hover {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    width: 80%; /* Adjust the width as needed */
+    width: 80%; 
     margin: 0 auto;
 }
 
 .gallery-item {
     flex: none;
     scroll-snap-align: start;
-    width: 90%; /* Increase the width for larger images */
-    margin-right: 20px; /* Adjust the margin as needed */
+    width: 90%;
+    margin-right: 20px; 
 }
 
 .gallery-item img {
@@ -202,14 +202,13 @@ footer .social-media a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Hide scrollbar for gallery container */
 .gallery-container::-webkit-scrollbar {
-    width: 0; /* Safari and Chrome */
+    width: 0; 
 }
 
 .gallery-container {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
 }
 
 /* Scroll Button Styles */
