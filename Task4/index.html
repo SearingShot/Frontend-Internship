@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="icon" href="images/netflix.webp" type="image/icon type">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Netflix</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search..." id="search-bar">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    <main>
+        <section id="hero"     style="background: url('images/background.webp') no-repeat center center/cover;">
+            <div class="hero-text">
+                <h1>Featured Movie</h1>
+                <p>Watch the latest blockbuster now!</p>
+                <button>Play</button>
+                <button>More Info</button>
+            </div>
+        </section>
+        <section id="trending">
+            <h2>Trending Now</h2>
+            <div class="content-grid">
+                <!-- Trending content items will go here -->
+            </div>
+        </section>
+        <section id="top-rated">
+            <h2>Top Rated</h2>
+            <div class="content-grid">
+                <!-- Top rated content items will go here -->
+            </div>
+        </section>
+        <section id="new-releases">
+            <h2>New Releases</h2>
+            <div class="content-grid">
+                <!-- New releases content items will go here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Netflix Clone. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
