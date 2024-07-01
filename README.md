@@ -1,6 +1,6 @@
-## VeriTech Frontend Internship
+## Frontend Internship
 
-- This Repository Consists Of Task Done For VeriTech Internship
+- This Repository Consists Of All Tasks Done For Frontend Internship
 
 - Deployed links of all tasks are given below :- 
   - Task 1 -  Deployed Link :- https://company-team-member-page-1.netlify.app/
